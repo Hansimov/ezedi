@@ -1,5 +1,6 @@
 # ezedi
-An easy video editor
+
+**Export clips of video; capture frames and combine them.**
 
 Features to do:
 
@@ -9,7 +10,7 @@ Video:
   
 
 Image:
-- [ ] Capture and combine frames of the video
+- [ ] Capture and combine frames
     - [ ] Customize positions and shapes of each captured frame
     - [ ] Support multiple edits in a pool
 
