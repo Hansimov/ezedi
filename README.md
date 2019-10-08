@@ -5,9 +5,9 @@ An easy multimedia editor.
 <h3>Logs</h3>
 
 **v0.1.0**
-- [x] Implement a video player prototype with the help of Qt's [videowidget example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
+- [x] Implement a video player prototype with the help of Qt's [Video Widget Example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
 - [x] Release with .dll files successfully
-
+- [x] Package and compress .dll files to a single .exe
 
 <h3>Features to do:</h3>
 
