@@ -5,7 +5,8 @@ An easy multimedia editor.
 <h3>Logs</h3>
 
 **v0.1.0**
-[x] Implement a video player prototype with the help of Qt's [videowidget example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
+- [x] Implement a video player prototype with the help of Qt's [videowidget example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
+- [x] Release with .dll files successfully
 
 
 <h3>Features to do:</h3>
@@ -14,7 +15,6 @@ An easy multimedia editor.
 - [ ] Export clips with in and out markers
     - [ ] Support multiple clips at the same time
     - [ ] Loop part of video
-  
 
 **Image:**
 - [ ] Capture and combine frames
