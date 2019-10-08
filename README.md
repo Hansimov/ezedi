@@ -1,16 +1,21 @@
 # ezedi
 
-**Export clips of video; capture frames and combine them.**
+An easy multimedia editor.
 
-Features to do:
+<h3>Logs</h3>
 
-Video:
+v0.1.0: ?
+
+
+<h3>Features to do:</h3>
+
+**Video:**
 - [ ] Export clips with in and out markers
     - [ ] Support multiple clips at the same time
     - [ ] Loop part of video
   
 
-Image:
+**Image:**
 - [ ] Capture and combine frames
     - [ ] Rename, clip, copy, undo, redo, ...
     - [ ] Customize positions and shapes of each captured frame
@@ -25,5 +30,6 @@ Image:
     - [ ] Edit and combine long images
     - [ ] Auto numbering
 
-Interface:
+**Interface:**
 - [ ] Customized theme, font, layout, ...
+- [ ] Auto 

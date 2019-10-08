@@ -21,5 +21,7 @@ Calculator::Calcutor(QWidget *parent)
     font.setPointSize(font.pointSize()+8);
     display->setFont(font);
     
-    
+    for (int i=0; i<NumDigitButtons; ++i) {
+        digitButtons[i] = createButton(QString::number(i),SLOT(digitClicked()));
+    }
 }
