@@ -2,6 +2,7 @@
 
 #include <QtWidgets>
 #include <QVideoWidget>
+#include <QLabel>
 
 VideoPlayer::VideoPlayer(QWidget *parent)
     : QWidget(parent)
