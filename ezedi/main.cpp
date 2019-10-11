@@ -2,16 +2,22 @@
 
 #include <QApplication>
 #include <QDesktopWidget>
+#include <QSettings>
+#include <QDebug>
+#include <QMediaPlaylist>
+#include <QVideoWidget>
+#include <QMediaPlayer>
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    VideoPlayer player;
-
-    const QRect availableGeometry = QApplication::desktop()->availableGeometry(&player);
-    player.resize(availableGeometry.width()/6, availableGeometry.height()/4);
-    player.show();
+    VideoPlayer *player = new VideoPlayer;
+    
+    QCoreApplication::setOrganizationName("ezedi");
+    QCoreApplication::setApplicationName("ezedi");
+    player->startUp();
+    
     
     return app.exec();
 }

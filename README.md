@@ -6,11 +6,13 @@ An easy multimedia editor.
 <hr><hr>
 
 <h3>Develop Logs</h3>
+**v0.1.1**
+- [+] Add remember previous window geometry before last close
 
 **v0.1.0**
-- [x] Implement a video player prototype with the help of Qt's [Video Widget Example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
-- [x] Release with .dll files successfully
-- [x] Package and compress .dll files to a single .exe
+- [+] Implement a video player prototype with the help of Qt's [Video Widget Example](https://doc.qt.io/qt-5/qtmultimedia-multimediawidgets-videowidget-example.html).
+- [+] Release with .dll files successfully
+- [+] Package and compress .dll files to a single .exe
 
 
 <hr><hr>

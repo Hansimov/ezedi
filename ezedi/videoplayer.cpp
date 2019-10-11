@@ -3,6 +3,7 @@
 #include <QtWidgets>
 #include <QVideoWidget>
 #include <QLabel>
+#include <QDebug>
 
 VideoPlayer::VideoPlayer(QWidget *parent)
     : QWidget(parent)
@@ -124,14 +125,21 @@ void VideoPlayer::handleError()
 }
 
 
+void VideoPlayer::closeEvent(QCloseEvent *event)
+{
+    QSettings settings("ezedi","ezedi");
+    settings.setValue("player/geometry", this->geometry());
+//    qDebug() << "Closing ...";
+//    qDebug() << settings.value("player/geometry");
+    QWidget::closeEvent(event);
+}
 
-
-
-
-
-
-
-
-
-
+void VideoPlayer::startUp()
+{
+    QSettings settings("ezedi","ezedi");
+//    qDebug()<<"Opening ...";
+    this->setGeometry(settings.value("player/geometry").toRect());
+//    qDebug()<<settings.value("player/geometry");
+    this->show();
+}
 

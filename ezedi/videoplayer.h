@@ -17,8 +17,12 @@ class VideoPlayer : public QWidget
     
 public:
     VideoPlayer(QWidget *parent = nullptr);
-    ~VideoPlayer();
+    ~VideoPlayer() override;
     void setUrl(const QUrl &url);
+    void startUp();
+    
+private:
+    void closeEvent(QCloseEvent *event) override;
     
 public slots:
     void openFile();
@@ -36,6 +40,7 @@ private:
     QAbstractButton *m_playButton;
     QSlider *m_positionSlider;
     QLabel *m_errorLabel;
+
 };
 
 #endif
