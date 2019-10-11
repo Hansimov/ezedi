@@ -63,9 +63,22 @@ void VideoPlayer::openFile()
     QStringList supportedMimeTypes = m_mediaPlayer->supportedMimeTypes();
     if (!supportedMimeTypes.isEmpty())
         fileDialog.setMimeTypeFilters(supportedMimeTypes);    
-    fileDialog.setDirectory(QStandardPaths::standardLocations(QStandardPaths::MoviesLocation).value(0,QDir::homePath()));
+//    fileDialog.setDirectory(QStandardPaths::standardLocations(QStandardPaths::MoviesLocation).value(0,QDir::homePath()));
+//    fileDialog.setDirectory(tr("D:/"));
+    
+    QSettings settings("ezedi","ezedi");
+    QString sel = settings.value("play/opendir").toString();
+//    qDebug() << sel;
+    fileDialog.setDirectory(sel);
+    
     if (fileDialog.exec() == QDialog::Accepted)
-        setUrl(fileDialog.selectedUrls().constFirst());    
+        setUrl(fileDialog.selectedUrls().constFirst());
+    sel = fileDialog.selectedFiles()[0];
+//    qDebug() << sel;
+    
+    settings.setValue("play/opendir",sel);
+//    qDebug() << settings.value("play/opendir").toString(); 
+    
 }
 
 void VideoPlayer::setUrl(const QUrl &url)
